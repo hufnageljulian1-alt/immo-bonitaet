@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum & Datenschutz – ImmoBonität</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0A1628; --blue: #1B4FD8; --blue-light: #DBEAFE; --blue-pale: #EFF6FF;
+    --gray-50: #F8FAFC; --gray-100: #F1F5F9; --gray-300: #CBD5E1;
+    --gray-500: #64748B; --gray-700: #334155; --gray-900: #0F172A;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'DM Sans',sans-serif; background:var(--gray-50); color:var(--gray-900); }
+
+  nav {
+    background:white; border-bottom:1px solid var(--gray-100);
+    padding:0 48px; height:64px; display:flex; align-items:center; justify-content:space-between;
+    position:sticky; top:0; z-index:100;
+  }
+  .nav-logo { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); }
+  .nav-logo span { color:var(--blue); }
+  .nav-back { font-size:14px; color:var(--blue); text-decoration:none; display:flex; align-items:center; gap:6px; }
+
+  .page-hero {
+    background:linear-gradient(135deg,var(--navy),#1a3a6e);
+    padding:60px 48px; text-align:center;
+  }
+  .page-hero h1 { font-family:'Playfair Display',serif; font-size:36px; color:white; margin-bottom:12px; }
+  .page-hero p { font-size:15px; color:rgba(255,255,255,0.6); }
+
+  .tabs {
+    display:flex; justify-content:center; gap:8px;
+    background:white; padding:20px; border-bottom:1px solid var(--gray-100);
+    position:sticky; top:64px; z-index:99;
+  }
+  .tab {
+    padding:10px 28px; border-radius:100px; font-size:14px; font-weight:600;
+    cursor:pointer; border:1.5px solid var(--gray-300); background:white; color:var(--gray-700);
+    transition:all .2s; font-family:'DM Sans',sans-serif;
+  }
+  .tab.active { background:var(--blue); border-color:var(--blue); color:white; }
+
+  .content { max-width:800px; margin:0 auto; padding:48px 24px 80px; }
+  .section { display:none; }
+  .section.active { display:block; }
+
+  .legal-card {
+    background:white; border-radius:20px; padding:40px;
+    border:1px solid var(--gray-100); margin-bottom:24px;
+  }
+  .legal-card h2 {
+    font-family:'Playfair Display',serif; font-size:22px; color:var(--navy);
+    margin-bottom:20px; padding-bottom:16px; border-bottom:2px solid var(--blue-light);
+  }
+  .legal-card h3 { font-size:16px; font-weight:700; color:var(--navy); margin:20px 0 10px; }
+  .legal-card p { font-size:14px; color:var(--gray-700); line-height:1.8; margin-bottom:12px; }
+  .legal-card a { color:var(--blue); text-decoration:none; }
+  .legal-card a:hover { text-decoration:underline; }
+
+  .placeholder {
+    background:var(--blue-pale); border:2px dashed var(--blue-light);
+    border-radius:8px; padding:6px 12px; font-size:13px; font-weight:700;
+    color:var(--blue); display:inline-block; cursor:pointer;
+  }
+
+  .warning-box {
+    background:#FEF3C7; border:1px solid #FDE68A; border-radius:12px;
+    padding:16px 20px; margin-bottom:32px; display:flex; gap:12px; align-items:flex-start;
+  }
+  .warning-box .icon { font-size:20px; flex-shrink:0; margin-top:2px; }
+  .warning-box p { font-size:13px; color:#92400E; line-height:1.6; }
+  .warning-box strong { color:#78350F; }
+
+  footer {
+    background:var(--gray-900); color:rgba(255,255,255,0.4);
+    padding:32px 48px; text-align:center; font-size:12px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Immo<span>Bonität</span></div>
+  <a href="index.html" class="nav-back">← Zurück zur Website</a>
+</nav>
+
+<div class="page-hero">
+  <h1>Rechtliche Informationen</h1>
+  <p>Impressum & Datenschutzerklärung gemäß deutschem Recht und DSGVO</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('impressum', this)">Impressum</button>
+  <button class="tab" onclick="showTab('datenschutz', this)">Datenschutzerklärung</button>
+  <button class="tab" onclick="showTab('haftung', this)">Haftungsausschluss</button>
+</div>
+
+<div class="content">
+
+  <!-- ══════════════════════════════════ -->
+  <!-- IMPRESSUM                         -->
+  <!-- ══════════════════════════════════ -->
+  <div class="section active" id="impressum">
+
+    <div class="warning-box">
+      <div class="icon">✏️</div>
+      <p><strong>Hinweis zum Ausfüllen:</strong> Ersetze alle <span style="background:#DBEAFE;padding:2px 6px;border-radius:4px;color:#1B4FD8;font-weight:700">markierten Felder</span> mit deinen echten Daten in VS Code. Öffne die Datei rechtlich.html und suche nach den Platzhaltern in eckigen Klammern.</p>
+    </div>
+
+    <div class="legal-card">
+      <h2>Impressum</h2>
+      <p>Angaben gemäß § 5 TMG</p>
+
+      <h3>Betreiber dieser Website</h3>
+      <p>
+        <span class="placeholder">[VORNAME NACHNAME]</span><br>
+        <span class="placeholder">[STRASSE HAUSNUMMER]</span><br>
+        <span class="placeholder">[PLZ]</span> <span class="placeholder">[ORT]</span><br>
+        Deutschland
+      </p>
+
+      <h3>Kontakt</h3>
+      <p>
+        Telefon: <span class="placeholder">[TELEFONNUMMER]</span><br>
+        E-Mail: <span class="placeholder">[EMAIL@DOMAIN.DE]</span>
+      </p>
+
+      <h3>Gewerbeanmeldung</h3>
+      <p>
+        Gewerbeangemeldet beim: <span class="placeholder">[GEWERBEAMT STADT]</span><br>
+        Steuernummer: <span class="placeholder">[STEUERNUMMER]</span> (wird nach Anmeldung zugewiesen)
+      </p>
+
+      <h3>Berufsbezeichnung</h3>
+      <p>Entwickler und Betreiber digitaler Plattformen und KI-gestützter Software-Lösungen. Kein Immobilienmakler im Sinne des §34c GewO. Die Plattform dient ausschließlich der informativen Darstellung und vermittelt keine Immobilien im rechtlichen Sinne.</p>
+
+      <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+      <p>
+        <span class="placeholder">[VORNAME NACHNAME]</span><br>
+        <span class="placeholder">[STRASSE HAUSNUMMER]</span><br>
+        <span class="placeholder">[PLZ ORT]</span>
+      </p>
+
+      <h3>EU-Streitschlichtung</h3>
+      <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- DATENSCHUTZ                        -->
+  <!-- ══════════════════════════════════ -->
+  <div class="section" id="datenschutz">
+
+    <div class="legal-card">
+      <h2>Datenschutzerklärung</h2>
+      <p>Stand: <span class="placeholder">[MONAT JAHR]</span></p>
+
+      <h3>1. Datenschutz auf einen Blick</h3>
+      <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+
+      <h3>2. Verantwortlicher</h3>
+      <p>
+        Verantwortlicher für die Datenverarbeitung auf dieser Website:<br><br>
+        <span class="placeholder">[VORNAME NACHNAME]</span><br>
+        <span class="placeholder">[STRASSE HAUSNUMMER]</span><br>
+        <span class="placeholder">[PLZ ORT]</span><br>
+        E-Mail: <span class="placeholder">[EMAIL@DOMAIN.DE]</span>
+      </p>
+
+      <h3>3. Datenerfassung auf dieser Website</h3>
+      <p><strong>Bonitätsrechner:</strong> Der auf dieser Website enthaltene Bonitätsrechner verarbeitet alle eingegebenen Daten (Einkommen, Eigenkapital, SCHUFA-Score etc.) ausschließlich lokal in Ihrem Browser. Es werden keinerlei Finanzdaten an unsere Server übertragen, gespeichert oder ausgewertet. Die Berechnung erfolgt vollständig anonym auf Ihrem Gerät.</p>
+
+      <p><strong>Kontaktformular:</strong> Wenn Sie über das Kontaktformular eine Anfrage an einen Makler stellen, werden die von Ihnen eingegebenen Daten (Name, E-Mail, Nachricht) direkt an den jeweiligen Makler weitergeleitet. Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.</p>
+
+      <p><strong>Server-Log-Dateien:</strong> Der Provider dieser Website erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch übermittelt. Dies sind: Browsertyp und -version, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage und IP-Adresse. Diese Daten werden nicht mit anderen Datenquellen zusammengeführt.</p>
+
+      <h3>4. Hosting</h3>
+      <p>Diese Website wird bei Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA gehostet. Vercel ist ein Auftragsverarbeiter gemäß Art. 28 DSGVO. Details zur Datenverarbeitung durch Vercel finden Sie unter: <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></p>
+
+      <h3>5. Cookies</h3>
+      <p>Diese Website verwendet keine Tracking-Cookies. Es werden ausschließlich technisch notwendige Cookies verwendet, die für den Betrieb der Website erforderlich sind.</p>
+
+      <h3>6. Google Fonts</h3>
+      <p>Diese Website verwendet Google Fonts zur einheitlichen Darstellung von Schriftarten. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in Ihren Browsercache. Dabei wird Ihre IP-Adresse an Google übermittelt. Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+      <h3>7. Ihre Rechte</h3>
+      <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
+
+      <h3>8. Beschwerderecht</h3>
+      <p>Sie haben das Recht, sich bei der zuständigen Aufsichtsbehörde zu beschweren. Die zuständige Aufsichtsbehörde für Bayern ist: Bayerisches Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach.</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- HAFTUNGSAUSSCHLUSS                 -->
+  <!-- ══════════════════════════════════ -->
+  <div class="section" id="haftung">
+
+    <div class="legal-card">
+      <h2>Haftungsausschluss</h2>
+
+      <h3>Kein Ersatz für professionelle Beratung</h3>
+      <p>Die auf dieser Website bereitgestellten Berechnungen und Informationen dienen ausschließlich der allgemeinen Information und stellen keine Finanz-, Steuer- oder Rechtsberatung dar. Die Ergebnisse des Bonitätsrechners sind unverbindliche Schätzungen und ersetzen keine professionelle Beratung durch einen Bankberater, Finanzberater oder Steuerberater.</p>
+
+      <h3>Keine Gewähr für Richtigkeit</h3>
+      <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte und Berechnungen. Die tatsächlichen Kreditkonditionen und Finanzierungsmöglichkeiten können erheblich von den angezeigten Schätzwerten abweichen und hängen von einer Vielzahl individueller Faktoren ab, die durch diesen Rechner nicht vollständig erfasst werden können.</p>
+
+      <h3>Immobilienangebote</h3>
+      <p>Die auf dieser Website präsentierten Immobilienangebote stammen von selbstständigen Maklerbetrieben. Für die Richtigkeit, Vollständigkeit und Aktualität der Angebote sind ausschließlich die jeweiligen Makler verantwortlich. Diese Website fungiert als Präsentationsplattform und ist nicht am Abschluss von Kaufverträgen beteiligt.</p>
+
+      <h3>Externe Links</h3>
+      <p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+      <h3>Urheberrecht</h3>
+      <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 ImmoBonität · <span class="placeholder">[VORNAME NACHNAME]</span> · Alle Rechte vorbehalten
+</footer>
+
+<script>
+  function showTab(id, btn) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
